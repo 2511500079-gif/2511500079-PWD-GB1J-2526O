@@ -85,39 +85,41 @@
 <p><strong>Nama Kakak2:</strong> Dwiranda Aditiya</p>
 </section>
 
-    <section id="#Contact">
-        <h2>Selamat Datang!</h2>
-   <p><form action="" method="GET">
-    <label for="txtNama">Nama:</label>
-    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplate="name"> 
+  <section id="contact">
+    <h2>Selamat Datang!</h2>
+    <form action="" method="GET">
+        <label for="txtNama">Nama:</label>
+        <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name"> 
 
-    <label for="txtEmail">Email:</label>
-    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplate="email">
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
 
-    <label for="txtPesan">Pesan</label>
-    <textarea name="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."></textarea>
-    
-    <button type="submit">Kirim</button>
-    <button type="reset">Batal</button>
-</form>
+        <label for="txtPesan">Pesan:</label>
+        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+        
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+    </form>
+</section>
 
 <style>
-    #contact {
-    background-color: #f2f8fa;
+#contact {
+    background-color: #f9fafa;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     max-width: 600px;
     margin: 40px auto;
-    box-shadow: 0 2px 8px rgba(0, 128, 128, 0.1);
-    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 #contact h2 {
-    color: teal;
-    border-bottom: 2px solid lightseagreen;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
     text-align: center;
+    color: #007B7F;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #7bdff2;
+    padding-bottom: 10px;
 }
 
 #contact form {
@@ -127,18 +129,23 @@
 }
 
 #contact label {
-    font-weight: bold;
+    font-weight: 600;
     color: #333;
 }
 
 #contact input,
 #contact textarea {
-    padding: 10px;
+    padding: 10px 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #00a1a7;
+    outline: none;
 }
 
 #contact textarea {
@@ -147,36 +154,38 @@
 }
 
 #contact button {
-    width: fit-content;
     padding: 10px 20px;
-    background-color: teal;
+    background-color: #00a1a7;
     color: white;
     border: none;
     border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    width: fit-content;
 }
 
 #contact button[type="reset"] {
-    background-color: gray;
+    background-color: #888;
 }
 
 #contact button:hover {
-    background-color: darkcyan;
+    background-color: #007B7F;
 }
 
 #contact button[type="reset"]:hover {
-    background-color: #555;
+    background-color: #666;
 }
 
 @media (max-width: 600px) {
     #contact {
-        padding: 15px;
+        padding: 20px;
     }
 
     #contact h2 {
         font-size: 20px;
     }
 }
+
 
 </style>
