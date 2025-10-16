@@ -86,40 +86,40 @@
 </section>
 
   <section id="contact">
-    <h2>Selamat Datang!</h2>
+    <h2>Kontak Kami</h2>
     <form action="" method="GET">
-        <label for="txtNama">Nama:</label>
+        <label for="txtNama"></span>Nama:</span>
         <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name"> 
-
-        <label for="txtEmail">Email:</label>
+        </label>
+        <label for="txtEmail"><span>Email:</span>
         <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
-
-        <label for="txtPesan">Pesan:</label>
+        </label>
+        <label for="txtPesan"><span>Pesan Anda:</span>
         <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-        
+        </label>
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
     </form>
 </section>
 
 <style>
+#about,
 #contact {
-    background-color: #f9fafa;
+    background-color: #ffffff;
     border-radius: 10px;
-    padding: 30px;
-    max-width: 600px;
+    padding: 20px;
+    max-width: 700px;
     margin: 40px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#about h2,
 #contact h2 {
-    text-align: center;
-    color: #007B7F;
-    margin-bottom: 25px;
-    font-size: 24px;
-    border-bottom: 2px solid #7bdff2;
-    padding-bottom: 10px;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 #contact form {
@@ -128,53 +128,60 @@
     gap: 15px;
 }
 
+#about p,
 #contact label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#about strong,
+#contact label>span {
+    min-width: 180px;
+    color: #003366;
     font-weight: 600;
-    color: #333;
+    text-align: right;
+    padding-right: 16px;
+    flex-shrink: 0;
 }
 
 #contact input,
 #contact textarea {
-    padding: 10px 12px;
+    flex: 1;
     border: 1px solid #ccc;
     border-radius: 6px;
-    font-size: 14px;
-    transition: border-color 0.3s;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    border-color: #00a1a7;
-    outline: none;
-}
-
-#contact textarea {
-    resize: vertical;
-    min-height: 100px;
+    padding: 8px;
+    color: #000;
+    font-weight: normal;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #contact button {
-    padding: 10px 20px;
-    background-color: #00a1a7;
-    color: white;
-    border: none;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 16px;
     border-radius: 6px;
-    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: fit-content;
+    border: none;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+}
+
+#contact button[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    font-weight: 600;
 }
 
 #contact button[type="reset"] {
-    background-color: #888;
-}
-
-#contact button:hover {
-    background-color: #007B7F;
-}
-
-#contact button[type="reset"]:hover {
-    background-color: #666;
+    background-color: #b4b4b4;
+    color: #272727;
+    font-weight: 500;
 }
 
 @media (max-width: 600px) {
