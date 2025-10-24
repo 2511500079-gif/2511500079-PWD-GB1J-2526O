@@ -78,7 +78,7 @@ header li a:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
     border-radius: 6px;
-    background-color: rgb (225, 255, 255, 0.15);
+    background-color: rgb (255, 255, 255, 0.15);
 }
 header li a:active {
     background-color: #cc04a1;
@@ -91,5 +91,25 @@ header li a:active {
     top: 0;
     z-index: 1000;
   }
-...
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+header ul {
+    flex-direction: column;
+    align-self: stretch;
+    gap: 8px;
+    margin: 8px 0 0;
+}
+
+header li a {
+    display: block;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    background: rgba(255, 255, 255, .08);
+    backdrop-filter: saturate(120%);
 }
