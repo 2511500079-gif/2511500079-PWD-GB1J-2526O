@@ -11,4 +11,5 @@ Hari ini, Rabu 15 Oktober saya mempelajari:
   <li>stling header<li>
   <li>styling section#home<li>
   <li>styling footer<li>
+  <li>styling navigasi<li>
   <ol>
