@@ -10,4 +10,5 @@ Hari ini, Rabu 15 Oktober saya mempelajari:
   <li>aturan css untuk body dan global reset<li>
   <li>stling header<li>
   <li>styling section#home<li>
+  <li>styling footer<li>
   <ol>
