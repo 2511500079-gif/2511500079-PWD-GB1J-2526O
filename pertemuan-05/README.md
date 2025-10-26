@@ -9,3 +9,4 @@ Hari ini, 23 Oktober saya mempelajari :
 <li>tombol hamburger<li>
 <li>class menu-toggle<li>
 <li>class menu-toggle mobile<li>
+<li>styling nav mobile<li>
