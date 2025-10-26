@@ -84,6 +84,16 @@ header li a:active {
     background-color: #cc04a1;
     transform: translateY(1px);
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: 28px;
+    cursor: pointer;
+}
+
 @media (max-widht: 600px) {
   header {
     padding: 16px;
