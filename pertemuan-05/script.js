@@ -1,14 +1,11 @@
-   document.addEventListener('DOMContentLoaded', function() {
-       const menuToggle = document.querySelector('.menu-toggle');
-       const nav = document.querySelector('nav');
-       menuToggle.addEventListener('click', function() {
-           nav.classList.toggle('active');
-       });
-   });
-   
+document.getElementById("menuToggle").addEventListener("click", function () {
+document.querySelector("nav").classList.toggle("active");
+});
+
 alert("Halo, Selamat Datang!");
 let nama = prompt("Siapa nama kamu?");
 alert("Halo, " + nama + "!");
+
 
 document.querySelector("form").addEventListener("submit", function (e) {
 const nama = document.getElementById("txtNama").value.trim();
@@ -97,28 +94,15 @@ const target = document.getElementById(small.dataset.forId);
 if (target) alignErrorMessage(small, target);
 });
 });
-document.getElementById("menuToggle").addEventListener("click", function () {
-document.querySelector("nav").classList.toggle("active");
-});
-document.getElementById("menuToggle").addEventListener("click", function () {
-const nav = document.querySelector("nav");
-nav.classList.toggle("active");
-if (nav.classList.contains("active")) {
-this.textContent = "\u2716";
-} else {
-this.textContent = "\u2630";
-}
-});
+
 document.addEventListener("DOMContentLoaded", function () {
 const homeSection = document.getElementById("home");
 const ucapan = document.createElement("p");
 ucapan.textContent = "Halo! Selamat datang di halaman saya!";
 homeSection.appendChild(ucapan);
 });
-document.getElementById("txtPesan").addEventListener("input", function () {
-const panjang = this.value.length;
-document.getElementById("charCount").textContent = panjang + "/200 karakter";
-});
+
+
 document.addEventListener("DOMContentLoaded", function () {
 function setupCharCountLayout() {
 const label = document.querySelector('label[for="txtPesan"]');
@@ -187,4 +171,15 @@ counter.style.width = 'auto';
 }
 setupCharCountLayout();
 window.addEventListener('resize', applyResponsiveLayout);
+});
+
+
+document.getElementById("menuToggle").addEventListener("click", function () {
+const nav = document.querySelector("nav");
+nav.classList.toggle("active");
+if (nav.classList.contains("active")) {
+this.textContent = "\u2716";
+} else {
+this.textContent = "\u2630";
+}
 });
