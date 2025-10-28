@@ -52,6 +52,8 @@ e.preventDefault();
 alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
 }
 });
+
+
 function showError(inputElement, message) {
 const label = inputElement.closest("label");
 if (!label) return;
@@ -174,12 +176,3 @@ window.addEventListener('resize', applyResponsiveLayout);
 });
 
 
-document.getElementById("menuToggle").addEventListener("click", function () {
-const nav = document.querySelector("nav");
-nav.classList.toggle("active");
-if (nav.classList.contains("active")) {
-this.textContent = "\u2716";
-} else {
-this.textContent = "\u2630";
-}
-});
