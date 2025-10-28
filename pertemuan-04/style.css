@@ -91,6 +91,9 @@ header li a:active {
     top: 0;
     z-index: 1000;
   }
+}
+  
+
 
 header h1 {
     margin: 0 0 8px;
@@ -112,5 +115,5 @@ header li a {
     background: rgba(255, 255, 255, .08);
     backdrop-filter: saturate(120%);
   }
-}
+
   
