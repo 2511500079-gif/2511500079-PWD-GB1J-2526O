@@ -131,12 +131,14 @@ header li a {
     left: 16px;
     top: 8px;
   }
-}
-
-nav {
+  nav {
   display: none;
   flex-direction: column;
   background: #003366;
   width: 100%;
   padding: 5px 0;
+  }
+  nav.active {
+    display: flex;
+  }
 }
