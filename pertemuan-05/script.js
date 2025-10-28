@@ -21,9 +21,6 @@ alert("Terima kasih, " + nama + "! Pesan Anda telah dikirim.");
 document.getElementById("menuToggle").addEventListener("click", function () {
 document.querySelector("nav").classList.toggle("active");
 });
-
-
-
 document.querySelector("form").addEventListener("submit", function (e) {
 const nama = document.getElementById("txtNama");
 const email = document.getElementById("txtEmail");
@@ -55,7 +52,6 @@ e.preventDefault();
 alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
 }
 });
-
 
 function showError(inputElement, message) {
 const label = inputElement.closest("label");
@@ -177,5 +173,13 @@ counter.style.width = 'auto';
 setupCharCountLayout();
 window.addEventListener('resize', applyResponsiveLayout);
 });
-
+document.getElementById("menuToggle").addEventListener("click", function () {
+const nav = document.querySelector("nav");
+nav.classList.toggle("active");
+if (nav.classList.contains("active")) {
+this.textContent = "\u2716";
+} else {
+this.textContent = "\u2630";
+}
+});
 
