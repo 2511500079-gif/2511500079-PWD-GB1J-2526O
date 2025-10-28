@@ -141,4 +141,48 @@ header li a {
   nav.active {
     display: flex;
   }
+  #about p,
+    #contact label {
+    }
+    #about strong,
+    #contact label>span {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 2px;
+    }
+    #contact input,
+    #contact textarea,
+    #contact button {
+      width: 100%;
+    }
+    header {
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    header ul {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+      margin: 8px 0 0;
+    }
+    header li a {
+        display: block;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 35);
+        background: rgba(0255, 255, 255, .08);
+        backdrop-filter: saturate(120%);
+    }
+}
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
 }
