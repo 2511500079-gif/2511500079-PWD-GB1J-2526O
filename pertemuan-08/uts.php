@@ -44,89 +44,26 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya sari";
+      echo "nama saya hadi";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-
     <section id="about">
       <?php
-          $nim = "2511500079&hearts;";
-          $Nama_Lengkap = "Monica Trie Hapsari&hearts;";
+          $nim = "2511500079";
+          $Nama_Lengkap = "Monica Trie Hapsari";
           $Tempat_Lahir = "Pangkalpinang";
-          $Tanggal_Lahir = "13 Mei 2007 &hearts;";
+          $Tanggal_Lahir ="13 Mei 2007";
           $hobi = "Food Hunting";
-          $Pasangan = "Ada &hearts;";
+          $Pasangan = "Ada&hearts;";
           $Pekerjaan = "Mahasiswa";
-          $Nama_orang_tua ="Nama Bapak saya yaitu Juarno dan Nama Ibu saya yaitu Ainah";
-          $Nama_kakak  = " Anissa Luthfi Nurjanah dan Dwiranda Aditiya";
+          $Nama_orang_tua ="Nama Bapak saya Juarno nama Ibu Ainah";
+          $Nama_kakak = "Anissa Luthfi Nurjannah & Dwiranda Aditiya";
     
       ?>
 
-      <section id="Biodata Sederhana">
-      <br><h2>Biodata sederhana</h2></br>
-      <form action="uts.php" method="POST">
-
-        <label for="txtnim"><span>NIM:</span>
-          <input type="Nim" id="txtnim" name="txtnim" placeholder="Ganti dengan punyamu..." required autocomplete="nim">
-        </label>
-
-        <label for="txtnamalengkap"><span>Nama Lengkap:</span>
-          <input type="Nama" id="txtnamalengkap" name="txtnamalengkap" placeholder="Ganti dengan punyamu..." required autocomplete="nama">
-        </label>
-
-        <label for="txttempatlahir"><span>Tempat Lahir:</span>
-          <input type="Tempat lahir" id="txttempatlahir" name="txttempatlahir" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txttanggallahir"><span>Tanggal Lahir:</span>
-          <input type="Tanggal lahir" id="txttanggallahir" name="txttanggallahir" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txthobi"><span>Hobi:</span>
-          <input type="hobi" id="txthobi" name="txthobi" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtpasangan"><span>Pasangan:</span>
-          <input type="pasangan" id="txtpasangan" name="txtpasangan" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        
-        <label for="txtpekerjaan"><span>Pekerjaan:</span>
-          <input type="pekerjaan" id="txtpekerjaan" name="txtpekerjaan" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamaortu"><span>Nama Orang Tua:</span>
-          <input type="nama orang tua" id="txtnamaortu" name="txtnamaortu" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamakakak"><span>Nama Kakak:</span>
-          <input type="nama kakak" id="txtnamakakak" name="txtnamakakak" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamaadik"><span>Nama Adik:</span>
-          <input type="nama adik" id="txtnamadik" name="txtnamaadik" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-  
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-      </form>
-
-
-      
-
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-  
-</html>
-
-      <h2>Tentang Saya</h2>
+      <h2>Biodata Sederhana Mahasiswa</h2>
       <p><strong>NIM:</strong><?php echo $sesnim?> </p>
       <p><strong>Nama Lengkap:</strong><?php echo $sesnama?></p>
       <p><strong>Tempat Lahir:</strong><?php echo $sestempatlahir?></p>
@@ -163,3 +100,71 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       </form>
 </section>
 
+
+
+
+  <section id="contact">
+      <br><h2>Gunakan bagian ini</h2></br>
+      <form action="uts.php" method="POST">
+
+        <label for="txtnim"><span>NIM:</span>
+          <input type="Nim" id="txtnim" name="txtnim" placeholder="Gunakan bagian ini..." required autocomplete="nim">
+        </label>
+
+        <label for="txtnamalengkap"><span>Nama Lengkap:</span>
+          <input type="Nama" id="txtnamalengkap" name="txtnamalengkap" placeholder="Gunakan bagian ini..." required autocomplete="nama">
+        </label>
+
+        <label for="txttempatlahir"><span>Tempat Lahir:</span>
+          <input type="Tempat lahir" id="txttempatlahir" name="txttempatlahir" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txttanggallahir"><span>Tanggal Lahir:</span>
+          <input type="Tanggal lahir" id="txttanggallahir" name="txttanggallahir" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txthobi"><span>Hobi:</span>
+          <input type="hobi" id="txthobi" name="txthobi" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txtpasangan"><span>Pasangan:</span>
+          <input type="pasangan" id="txtpasangan" name="txtpasangan" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        
+        <label for="txtpekerjaan"><span>Pekerjaan:</span>
+          <input type="pekerjaan" id="txtpekerjaan" name="txtpekerjaan" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txtnamaortu"><span>Nama Orang Tua:</span>
+          <input type="nama orang tua" id="txtnamaortu" name="txtnamaortu" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txtnamakakak"><span>Nama Kakak:</span>
+          <input type="nama kakak" id="txtnamakakak" name="txtnamakakak" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+        <label for="txtnamaadik"><span>Nama Adik:</span>
+          <input type="nama adik" id="txtnamadik" name="txtnamaadik" placeholder="Gunakan bagian ini..." required autocomplete="email">
+        </label>
+
+  
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+
+
+      
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Monica Trie Hapsari[2511500079]</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  
+</html>
