@@ -106,10 +106,6 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Monica Trie Hasari[2511500079]</p>
-  </footer>
-
   <script src="script.js"></script>
 </body>
   
