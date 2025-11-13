@@ -9,4 +9,5 @@ Hari ini, Kamis 13.NOV.2025 saya melakukan uts:<br>
   <li>Menambahkan section baru dengan judul Biodata Sederhana Mahasiswa<li>
   <li>Menginput biodata serta membuat tombol kirim dan batal sesuai dengan section contact<li>
   <li>Mengatur agar lebih rapi pada section yang baru<li>
+  <li>Merapikan section baru karena pada percobaan baru salah dan tidak ada hasil<li>
 

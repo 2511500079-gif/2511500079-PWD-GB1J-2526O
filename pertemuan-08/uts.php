@@ -49,9 +49,24 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="Biodata Sederhana">
-      <br><h2>Ganti dengan punyamu</h2></br>
-      <form action="ulangan.php" method="POST">
+
+    <section id="about">
+      <?php
+          $nim = "2511500079&hearts;";
+          $Nama_Lengkap = "Monica Trie Hapsari&hearts;";
+          $Tempat_Lahir = "Pangkalpinang";
+          $Tanggal_Lahir = "13 Mei 2007 &hearts;";
+          $hobi = "Food Hunting";
+          $Pasangan = "Ada &hearts;";
+          $Pekerjaan = "Mahasiswa";
+          $Nama_orang_tua ="Nama Bapak saya yaitu Juarno dan Nama Ibu saya yaitu Ainah";
+          $Nama_kakak  = " Anissa Luthfi Nurjanah dan Dwiranda Aditiya";
+    
+      ?>
+
+      <section id="Biodata Sederhana">
+      <br><h2>Biodata sederhana</h2></br>
+      <form action="uts.php" method="POST">
 
         <label for="txtnim"><span>NIM:</span>
           <input type="Nim" id="txtnim" name="txtnim" placeholder="Ganti dengan punyamu..." required autocomplete="nim">
@@ -110,20 +125,6 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
 </body>
   
 </html>
-
-    <section id="about">
-      <?php
-          $nim = "2511500079&hearts;";
-          $Nama_Lengkap = "Monica Trie Hapsari&hearts;";
-          $Tempat_Lahir = "Pangkalpinang";
-          $Tanggal_Lahir = "13 Mei 2007 &hearts;";
-          $hobi = "Food Hunting";
-          $Pasangan = "Ada &hearts;";
-          $Pekerjaan = "Mahasiswa";
-          $Nama_orang_tua ="Nama Bapak saya yaitu Juarno dan Nama Ibu saya yaitu Ainah";
-          $Nama_kakak  = " Anissa Luthfi Nurjanah dan Dwiranda Aditiya";
-    
-      ?>
 
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong><?php echo $sesnim?> </p>
@@ -162,71 +163,3 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       </form>
 </section>
 
-
-
-
-  <section id="contact">
-      <br><h2>Ganti dengan punyamu</h2></br>
-      <form action="ulangan.php" method="POST">
-
-        <label for="txtnim"><span>NIM:</span>
-          <input type="Nim" id="txtnim" name="txtnim" placeholder="Ganti dengan punyamu..." required autocomplete="nim">
-        </label>
-
-        <label for="txtnamalengkap"><span>Nama Lengkap:</span>
-          <input type="Nama" id="txtnamalengkap" name="txtnamalengkap" placeholder="Ganti dengan punyamu..." required autocomplete="nama">
-        </label>
-
-        <label for="txttempatlahir"><span>Tempat Lahir:</span>
-          <input type="Tempat lahir" id="txttempatlahir" name="txttempatlahir" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txttanggallahir"><span>Tanggal Lahir:</span>
-          <input type="Tanggal lahir" id="txttanggallahir" name="txttanggallahir" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txthobi"><span>Hobi:</span>
-          <input type="hobi" id="txthobi" name="txthobi" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtpasangan"><span>Pasangan:</span>
-          <input type="pasangan" id="txtpasangan" name="txtpasangan" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        
-        <label for="txtpekerjaan"><span>Pekerjaan:</span>
-          <input type="pekerjaan" id="txtpekerjaan" name="txtpekerjaan" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamaortu"><span>Nama Orang Tua:</span>
-          <input type="nama orang tua" id="txtnamaortu" name="txtnamaortu" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamakakak"><span>Nama Kakak:</span>
-          <input type="nama kakak" id="txtnamakakak" name="txtnamakakak" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-        <label for="txtnamaadik"><span>Nama Adik:</span>
-          <input type="nama adik" id="txtnamadik" name="txtnamaadik" placeholder="Ganti dengan punyamu..." required autocomplete="email">
-        </label>
-
-  
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-      </form>
-
-
-      
-
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Monica Trie Hasari[2511500079]</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-  
-</html>
