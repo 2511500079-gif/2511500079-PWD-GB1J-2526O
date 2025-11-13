@@ -49,7 +49,7 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="Biodata Sederhana Mahasiswa">
+    <section id="Biodata Sederhana">
       <br><h2>Ganti dengan punyamu</h2></br>
       <form action="ulangan.php" method="POST">
 
