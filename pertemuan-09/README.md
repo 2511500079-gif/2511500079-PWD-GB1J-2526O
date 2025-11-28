@@ -17,6 +17,7 @@
   <li>Untuk menampilkan array menggunakan looping foreach, dan menambahkan htmlspecialchars</li>
   <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array associative $fieldConfig</li>
   <li>menyediakan utilitas dasar untuk membersihkan input pengguna dari karakter berbahaya dan memvalidasi apakah input tersebut tidak kosong</li>
-  <li>Menambakan lagi kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,
+  <li>Menambahkan lagi kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,
 dan 4 digit tahun</li>
+<li>Menambahkan lagi kode pada fungsi.php untuk merender hasil atau output biodata</li>
 </ol>
