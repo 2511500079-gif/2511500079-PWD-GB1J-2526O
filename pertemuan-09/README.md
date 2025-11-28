@@ -11,4 +11,6 @@
   <li>tangkap session dari file proses selesai</li>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
+  <li>Memodif baris 10-19 menjadi bentuk array associative</li>
+
 </ol>
