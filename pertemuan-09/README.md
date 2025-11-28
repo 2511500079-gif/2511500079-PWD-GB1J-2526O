@@ -16,4 +16,5 @@
   <li>Hapus baris kode 19-67 dan tambah suffix</li>
   <li>Untuk menampilkan array menggunakan looping foreach, dan menambahkan htmlspecialchars</li>
   <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array associative $fieldConfig</li>
+  <li>menyediakan utilitas dasar untuk membersihkan input pengguna dari karakter berbahaya dan memvalidasi apakah input tersebut tidak kosong</li>
 </ol>
