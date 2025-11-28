@@ -14,5 +14,6 @@
   <li>Memodif baris 10-19 menjadi bentuk array associative</li>
   <li>Menghapus baris 23-32 karena berpotensi eror dan menambahkan dengan kode yang baru serta menambahkan exit</li>
   <li>Hapus baris kode 19-67 dan tambah suffix</li>
-  <li>Untuk menampilkan array menggunakan looping foreach, dan juga menambahkan htmlspecialchars</li>
+  <li>Untuk menampilkan array menggunakan looping foreach, dan menambahkan htmlspecialchars</li>
+  <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array associative $fieldConfig</li>
 </ol>
