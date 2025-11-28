@@ -20,4 +20,5 @@
   <li>Menambahkan lagi kode pada fungsi.php untuk menghasilkan tanggal dalam format 2 digit tanggal, 3 digit nama bulan,
 dan 4 digit tahun</li>
 <li>Menambahkan lagi kode pada fungsi.php untuk merender hasil atau output biodata</li>
+<li>Menghapus baris 123-129 pada index.html</li>
 </ol>
