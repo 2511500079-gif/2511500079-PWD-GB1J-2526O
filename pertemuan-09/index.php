@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once _DIR_ .'/fungsi.php';
+
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
   $sesnama = $_SESSION["sesnama"];
@@ -15,7 +17,6 @@ $sespesan = "";
 if (isset($_SESSION["sespesan"])):
   $sespesan = $_SESSION["sespesan"];
 endif;
-
 
 ?>
 
@@ -94,7 +95,7 @@ endif;
           <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak" required>
         </label>
 
-         <label for="txtNmAdik"><span>Nama Adik:</span>
+        <label for="txtNmAdik"><span>Nama Adik:</span>
           <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik" required>
         </label>
 
@@ -104,35 +105,26 @@ endif;
 
     </section>
 
-    <?php 
-$biodata = $_SESSION["biodata"] ?? [];
+    <?php
+    $biodata = $_SESSION["biodata"] ?? [];
 
-$fieldConfig = [
-  "nim" => ["label" => "NIM:", "suffix" => ""],
-  "nama" => ["label" => "Nama Lengkap:", "suffix" => " &#128562;"],
-  "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
-  "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
-  "hobi" => ["label" => "Hobi:", "suffix" => " &#127926;"],
-  "pasangan" => ["label" => "Pasangan:", "suffix" => " &hearts;"],
-  "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
-  "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
-  "kakak" => ["label" => "Nama Kakak:", "suffix" => ""]
-  "adik" => ["label" => "Nama Adik:", "suffix" => ""],
-];
-?>
+    $fieldConfig = [
+      "nim" => ["label" => "NIM:", "suffix" => ""],
+      "nama" => ["label" => "Nama Lengkap:", "suffix" => "&#128526;"],
+      "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
+      "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
+      "hobi" => ["label" => "Hobi:", "suffix" => "&#127926;"],
+      "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts;"],
+      "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
+      "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
+      "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
+      "adik" => ["label" => "Nama Adik:", "suffix" => ""],
+    ];
+    ?>
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong> <?= $txtNim ?></p>
-      <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
-      <p><strong>Tempat Lahir:</strong> <?= $txtT4Lhr ?></p>
-      <p><strong>Tanggal Lahir:</strong> <?= $txtTglLhr ?></p>
-      <p><strong>Hobi:</strong> <?= $txtHobi ?> &#127926;</p>
-      <p><strong>Pasangan:</strong> <?= $txtPasangan ?> &hearts;</p>
-      <p><strong>Pekerjaan:</strong> <?= $txtKerja ?> &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> <?= $txtNmOrtu ?></p>
-      <p><strong>Nama Kakak:</strong> <?= $txtNmKakak ?></p>
-      <p><strong>Nama Adik:</strong> <?= $txtNmAdik ?></p>
+      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
 
     <section id="contact">
@@ -157,7 +149,8 @@ $fieldConfig = [
       </form>
 
       <?php if (!empty($sesnama)): ?>
-        <br><hr>
+        <br>
+        <hr>
         <h2>Yang menghubungi kami</h2>
         <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
         <p><strong>Email :</strong> <?php echo $sesemail ?></p>
