@@ -119,6 +119,7 @@ $fieldConfig = [
   "kakak" => ["label" => "Nama Kakak:", "suffix" => ""]
   "adik" => ["label" => "Nama Adik:", "suffix" => ""],
 ];
+?>
 
     <section id="about">
       <h2>Tentang Saya</h2>
