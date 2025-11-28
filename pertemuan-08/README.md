@@ -14,3 +14,4 @@ Hari ini, Kamis 13.NOV.2025 saya melakukan uts:<br>
   <li>Merubah nama kedua orangtua saya karena ada kesalahan dalam pertama saya mencoba mengetik</li>
   <li>Merapakin readme pada github karena nomornya berantakan</li>
   <li>Ada beberapa yang saya ubah pada uts.php dan style.css</li>
+  <li>Memodif baris 10-19 menjadi bentuk array associative</li>
