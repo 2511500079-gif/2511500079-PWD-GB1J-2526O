@@ -13,3 +13,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>membuat file baru yang bernama read_inc.php, dan memodif kodenya</li>
  <li>mengganti kode baris 146 pada index.php</li>
  <li>menghapus baris 133-141 di index.php karena sudah tidak dibutuhkan lagi dan sudah diambil alih oleh file read_inc.php</li>
+ <li>menambahkan sql</li>
