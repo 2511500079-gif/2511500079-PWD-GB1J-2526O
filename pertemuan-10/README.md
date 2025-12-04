@@ -11,3 +11,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menambah folder baru yaitu read.php dan juga menambah kode</li>
  <li>mengisi record tbl_tamu sebanyak 3 record</li>
  <li>membuat file baru yang bernama read_inc.php, dan memodif kodenya</li>
+ <li>mengganti kode baris 146 pada index.php</li>
