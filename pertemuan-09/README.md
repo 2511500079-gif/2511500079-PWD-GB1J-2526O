@@ -21,4 +21,5 @@
 dan 4 digit tahun</li>
 <li>Menambahkan lagi kode pada fungsi.php untuk merender hasil atau output biodata</li>
 <li>Menghapus baris 123-129 pada index.html</li>
+<li>Tambahkan kode untuk menyertakan file fungsi.php dengan kode require_once</li>
 </ol>
