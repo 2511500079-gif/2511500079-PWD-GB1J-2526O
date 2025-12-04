@@ -10,3 +10,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>mengetik query untuk membuat tbl_tamu</li>
  <li>menambah folder baru yaitu read.php dan juga menambah kode</li>
  <li>mengisi record tbl_tamu sebanyak 3 record</li>
+ <li>membuat file baru yang bernama read_inc.php, dan memodif kodenya</li>
