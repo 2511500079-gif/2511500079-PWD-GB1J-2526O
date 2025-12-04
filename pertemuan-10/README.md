@@ -8,3 +8,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>mengekstrak bahan pertemuan 10 di elearning, membuat file koneksi, dan menambahkan kode</li>
  <li>menginstal phpMyAdmin</li>
  <li>mengetik query untuk membuat tbl_tamu</li>
+ <li>menambah folder baru yaitu read.php dan juga menambah kode</li>
