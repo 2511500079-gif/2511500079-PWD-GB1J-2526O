@@ -21,3 +21,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menambah code request method</li>
  <li>menambah code post</li>
  <li>manambahkan code validasi sederhana</li>
+ <li>Insert tbl_tamu prepared statement mysqli dan simpan sukses/gagal ke session</li>
