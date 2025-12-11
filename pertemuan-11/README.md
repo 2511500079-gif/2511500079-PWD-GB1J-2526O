@@ -1,4 +1,4 @@
-# pertemuan-10
+# pertemuan-11
 
 NIM : 2511500079<br>
 NAMA : Monica Trie Hapsri<br>
@@ -20,3 +20,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menambahkan code value</li>
  <li>menambah code request method</li>
  <li>menambah code post</li>
+ <li>manambahkan code validasi sederhana</li>
