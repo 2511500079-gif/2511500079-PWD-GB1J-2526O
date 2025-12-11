@@ -16,3 +16,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menambahkan sql</li>
  <li>update fungsi.php untuk helper redirect sederhana</li>
  <li>menambahkan flash message dari session</li>
+ <li>menampilkan fash messege</li>
