@@ -15,3 +15,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menghapus baris 133-141 di index.php karena sudah tidak dibutuhkan lagi dan sudah diambil alih oleh file read_inc.php</li>
  <li>menambahkan sql</li>
  <li>update fungsi.php untuk helper redirect sederhana</li>
+ <li>menambahkan flash message dari session</li>
