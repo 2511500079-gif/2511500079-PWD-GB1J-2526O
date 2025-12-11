@@ -18,3 +18,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>menambahkan flash message dari session</li>
  <li>menampilkan fash messege</li>
  <li>menambahkan code value</li>
+ <li>menambah code request method</li>
