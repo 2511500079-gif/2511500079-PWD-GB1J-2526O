@@ -135,8 +135,7 @@ require_once __DIR__ . '/fungsi.php';
       <form action="proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" 
-            required autocomplete="name">
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"  required autocomplete="name">
             value="<?= isset($old['nama']) ? htmlspecialchars($old['nama']) : '' ?>">
         </label>
 
