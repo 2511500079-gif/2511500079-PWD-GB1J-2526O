@@ -111,7 +111,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <?php 
     $flash_sukses = $_SESSION['flash_sukses'] ?? '';
-    $flash_error  = $_SESSION['flash'] ?? '';
+    $flash_error  = $_SESSION['flash_error'] ?? '';
     $old          = $_SESSION['old'] ?? [];
 
     unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
@@ -135,13 +135,14 @@ require_once __DIR__ . '/fungsi.php';
       <form action="proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"  required autocomplete="name">
-            value="<?= isset($old['nama']) ? htmlspecialchars($old['nama']) : '' ?>">
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"  
+          required autocomplete="name"
+          value="<?= isset($old['nama']) ? htmlspecialchars($old['nama']) : '' ?>">
         </label>
 
         <label for="txtEmail"><span>Email:</span>
           <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" 
-            required autocomplete="email">
+            required autocomplete="email"
             value="<?= isset($old['email']) ? htmlentities($old['email']) : '' ?>">
         </label>
 
