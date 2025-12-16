@@ -27,3 +27,5 @@ NAMA : Monica Trie Hapsri<br>
  <li>Menambah captcha di proses.php</li>
  <li>Menambah label captcha di index.php</li>
  <li>Menambahkan dcreated di tbl tamu</li>
+ <li>Menambahkan dcreated di read.php</li>
+ <li>Menambahkan require di read_inc.php</li>
