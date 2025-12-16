@@ -24,3 +24,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>Insert tbl_tamu prepared statement mysqli dan simpan sukses/gagal ke session</li>
  <li>Menambahkan baris nomor</li>
  <li>Tambah validasi di proses.php</li>
+ <li>Menambah captcha di proses.php</li>
