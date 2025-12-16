@@ -25,3 +25,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>Menambahkan baris nomor</li>
  <li>Tambah validasi di proses.php</li>
  <li>Menambah captcha di proses.php</li>
+ <li>Menambah label captcha di index.php</li>
