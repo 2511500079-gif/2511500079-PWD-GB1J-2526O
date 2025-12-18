@@ -30,3 +30,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>Menambahkan dcreated di read.php</li>
  <li>Menambahkan require di read_inc.php</li>
  <li>Tambah tombol edit di read.php agar tiap baris data atau record memiliki link mengandung edit</li>
+ <li></li>
