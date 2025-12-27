@@ -32,3 +32,4 @@ NAMA : Monica Trie Hapsri<br>
  <li>Tambah tombol edit di read.php agar tiap baris data atau record memiliki link mengandung edit</li>
  <li>Menampilkan flash sukses maupun flash error</li>
  <li>Membuat file baru yang bernama edit.php</li>
+ <li>Menambah file baru yang bernama proses_update.php untuk menyimpan perubahan menggunakan query update dan prepared statement</li>

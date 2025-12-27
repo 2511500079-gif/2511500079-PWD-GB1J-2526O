@@ -30,7 +30,6 @@ if (!$row) {
     redirect_ke('read.php');
 }
 
-#Nilai awal (prefill form)
 $nama  = $row['cnama'] ?? '';
 $email = $row['cemail'] ?? '';
 $pesan = $row['cpesan'] ?? '';
@@ -39,7 +38,6 @@ $pesan = $row['cpesan'] ?? '';
 $flash_error = $_SESSION['flash_error'] ?? '';
 $old = $_SESSION['old'] ?? [];
 unset($_SESSION['flash_error'], $_SESSION['old']);
-
 if (!empty($old)) {
     $nama  = $old['nama'] ?? $nama;
     $email = $old['email'] ?? $email;
@@ -74,7 +72,8 @@ if (!empty($old)) {
         <section id="contact">
             <h2>Edit Buku Tamu</h2>
             <?php if (!empty($flash_error)): ?>
-                <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
+                <div style="padding:10px; margin-bottom:10px;
+                 background:#f8d7da; color:#721c24; border-radius:6px;">
                     <?= $flash_error; ?>
                 </div>
             <?php endif; ?>
@@ -84,24 +83,24 @@ if (!empty($old)) {
 
     <label for="txtNama"><span>Nama:</span>
         <input type="text" id="txtNama" name="txtNamaEd"
-        placeholder="Masukkan nama" required autocomplete="name"
-        value="<?= !empty($nama) ? $nama : '' ?>">
+          placeholder="Masukkan nama" required autocomplete="name"
+          value="<?= !empty($nama) ? $nama : '' ?>">
     </label>
 
     <label for="txtEmail"><span>Email:</span>
         <input type="email" id="txtEmail" name="txtEmailEd"
-        placeholder="Masukkan email" required autocomplete="email"
-        value="<?= !empty($email) ? $email : '' ?>">
+          placeholder="Masukkan email" required autocomplete="email"
+          value="<?= !empty($email) ? $email : '' ?>">
     </label>
 
     <label for="txtPesan"><span>Pesan Anda:</span>
         <textarea id="txtPesan" name="txtPesanEd" rows="4"
-        placeholder="Tulis pesan anda..."
-        required><?= !empty($pesan) ? $pesan : '' ?></textarea>
+          placeholder="Tulis pesan anda..."
+          required><?= !empty($pesan) ? $pesan : '' ?></textarea>
     </label>
 
     <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
-        <input type="number" id="txtCaptcha" name="txtCaptcha"
+      <input type="number" id="txtCaptcha" name="txtCaptcha"
         placeholder="Jawab Pertanyaan..." required>
     </label>
 
