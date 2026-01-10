@@ -6,3 +6,4 @@ NAMA: Monica Trie Hapsari<br>
 
 <ol>
  <li>Mengekstrak pertemuan file 13</li>
+ <li>Menambah file delete</li>
