@@ -9,4 +9,5 @@ NAMA: Monica Trie Hapsari<br>
  <li>Menambah file delete</li>
  <li>Tambah file baru proses delete php</li>
  <li>menghapus dan menyesuaikan proses delete</li>
+ <li>menambah parameter</li>
  
