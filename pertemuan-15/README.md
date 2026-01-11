@@ -10,4 +10,5 @@ Hari ini tanggal 11-01-2026, saya mempelajari:<br>
 <li>Copy bahan uas di elearning</li>
 <li>Membuat file baru bernama read_biodata.php dan menambah code</li>
 <li>Membuat file baru bernama read_inc_biodata.php dan menambah beberapa code</li>
+<li>Mengubah code index ke file biodata</li>
 </ol>
