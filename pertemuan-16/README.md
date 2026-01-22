@@ -8,7 +8,7 @@ Hari ini 22 januari 2026, saya melakukan uas dan mengerjakan:<br>
 <ol>
 <li>Mendownload bahan uas di elearning</li>
 <li>Membuat tabel biodata pengunjung pada phpmyadmin</li>
-<li></li>
+<li>Membuat file baru yaitu proses biodata pengunjung dan menambah code</li>
 <li></li>
 <li></li>
 <li></li>
