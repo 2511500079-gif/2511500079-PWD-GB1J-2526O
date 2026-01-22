@@ -25,17 +25,20 @@ $adik= bersihkan($_POST['txtNmAdik'] ?? '');
 $errors = []; #ini array untuk menampung semua error yang ada
 
 
-if ($nim === '')        { $errors[] = 'NIM wajib diisi.'; }
-if ($nama === '')       { $errors[] = 'Nama lengkap wajib diisi.'; }
+if ($kode === '') { $errors[] = 'kode wajib diisi.';}
+if ($nama=== '' )     { $errors[] = 'Nama lengkap wajib diisi.'; }
 if ($tempat === '')     { $errors[] = 'Tempat lahir wajib diisi.'; }
-if ($tanggal === '')    { $errors[] = 'Tanggal lahir wajib diisi.'; }
-if ($hobi === '')       { $errors[] = 'Hobi wajib diisi.'; }
-if ($pekerjaan === '')  { $errors[] = 'Pekerjaan wajib diisi.'; }
-if ($ortu === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
+if ($alamat === '')  {$rrors[] = 'Tanggal lahir wajib diisi.'; }
+if ($tanggal === '')       { $errors[] = 'Hobi wajib diisi.'; }
+if ($hobi === '')  {$errors[] = 'Pekerjaan wajib diisi.'; }
+if ($asal === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
+if ($namaortu === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
+if ($namapacar === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
+if ($namamantan === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
 
 
 if (mb_strlen($nim) < 5) {
-  $errors[] = 'Nim minimal 5 karakter.';
+  $errors[] = 'kode minimal 5 karakter.';
 }
 
 if (mb_strlen($nama) < 10) {
@@ -48,17 +51,16 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nim'  => $nim,
+    'kode'  => $kode,
     'nama' => $nama,
-    'tempat' => $tempat,
+    'alamat' => $alamat,
     'tanggal'    => $tanggal,
     'hobi'       => $hobi,
-    'pasangan'   => $pasangan,
+    'asal'   => $asal,
     'pekerjaan'  => $pekerjaan,
     'ortu'       => $ortu,
-    'kakak'      => $kakak,
-    'adik'       => $adik,
-
+    'pasangan' => $pasangan,
+    'mantan' => $adik,
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
@@ -66,9 +68,9 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_biodata_mahasiswa_sederhana
-        (cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi,
- cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik)
+$sql = "INSERT INTO tbl_biodata_mahasiswa_pengunjung
+        (ckode_pengenal, cnama_pengunjung, calamat_rumah, ctanggal_kunjungan, chobi,
+ casal_sma, cpekerjaan, cnama_orangtua, cnama_pacar, cnama_mantan)
  VALUES (?, ?, ?)";
  
 $stmt = mysqli_prepare($conn, $sql);
@@ -82,16 +84,16 @@ if (!$stmt) {
 mysqli_stmt_bind_param(
     $stmt,
     "ssssssssss",
-    $nim,
+    $kode,
     $nama,
-    $tempat,
+    $alamat,
     $tanggal,
     $hobi,
-    $pasangan,
+    $asal,
     $pekerjaan,
     $ortu,
-    $kakak,
-    $adik
+    $pacar,
+    $mantan,
 );
 
 if (mysqli_stmt_execute($stmt)) {
