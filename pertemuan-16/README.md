@@ -12,7 +12,7 @@ Hari ini 22 januari 2026, saya melakukan uas dan mengerjakan:<br>
 <li>membuat file baru proses update pengunjung</li>
 <li>membuat file baru delete php dan mengedit data</li>
 <li>mengedit data yang salah</li>
-<li></li>
+<li>merubah beberapa code eror</li>
 <li></li>
 <li></li>
 <li></li>
